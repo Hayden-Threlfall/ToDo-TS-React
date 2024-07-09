@@ -9,6 +9,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.todo-app stack {
+  position: absolute;
+}
+
 .todo-app h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -16,15 +20,32 @@
 
 .add-todo {
   display: flex;
-  align-items: center;
   margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .add-todo input[type='text'] {
   flex: 1;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-todo select {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-todo div {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
   border-radius: 4px;
 }
 
